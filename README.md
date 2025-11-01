@@ -1,6 +1,9 @@
 # 便签墙 - 代码的浪漫
 
 > 一个受抖音热门"代码浪漫"启发的动态便签墙应用，便签沿爱心路径排列，展示温暖励志的文字。
+> 
+> <img width="2100" height="1194" alt="image" src="https://github.com/user-attachments/assets/af04a3ca-bc31-42b4-9309-a9ca0b34d71f" />
+
 
 ##  功能特性
 
