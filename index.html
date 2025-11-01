@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>便签墙 - 代码的浪漫 · 思想的碎片</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 主容器 -->
+    <div class="container">
+        <!-- 头部标题 -->
+        <header class="header">
+            <h1 class="title">便签墙</h1>
+            <p class="subtitle">// 用代码时光 · 让温暖浮现</p>
+        </header>
+
+        <!-- 便签画布 -->
+        <div id="noteCanvas" class="note-canvas">
+            <!-- 便签将动态生成在这里 -->
+        </div>
+
+        <!-- 紧凑控制面板(悬浮卡片) -->
+        <div class="compact-control-panel collapsed" id="controlPanel">
+            <button id="togglePanelBtn" class="toggle-compact-btn" title="展开控制">
+                <span class="icon">⚙️</span>
+            </button>
+
+            <div class="compact-content">
+                <div class="compact-row">
+                    <span id="noteCount" class="count-badge">0</span>
+                    <button id="toggleBtn" class="icon-btn primary" title="开始/暂停">
+                        <span class="icon">▶</span>
+                    </button>
+                    <button id="clearBtn" class="icon-btn danger" title="清空">
+                        <span class="icon">🗑</span>
+                    </button>
+                    <button id="debugBtn" class="icon-btn debug-btn" title="调试模式">
+                        <span class="icon">🐛</span>
+                    </button>
+                </div>
+                <div class="compact-slider">
+                    <input type="range" id="speedSlider" min="500" max="5000" value="2000" step="100">
+                    <span id="speedValue" class="speed-label">2.0s</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 主题切换按钮 -->
+    <button id="themeToggle" class="theme-toggle" title="切换主题">
+        <span class="icon">🌙</span>
+    </button>
+
+    <script src="js/noteGenerator.js"></script>
+    <script src="js/dragHandler.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
